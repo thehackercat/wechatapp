@@ -1,0 +1,7 @@
+<view class='bottom-tab'>
+  <view class='tab videos-tab {{currentTab==="videos"?"active":""}}' bindtap='goVideos'>活动</view>
+  <navigator hover-class='active' class='tab news-tab {{currentTab==="news"?"active":""}}' target="miniProgram" app-id="wx1b99348d4b77504e" open-type="navigate">
+  阅读
+  </navigator>
+  <view class='tab search-tab {{currentTab==="search"?"active":""}}' bindtap='goSearch'>搜索</view>
+</view>

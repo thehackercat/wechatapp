@@ -1,0 +1,31 @@
+@import "../../pages/common";
+
+.act-item {
+  border-bottom: 1rpx solid #ddd;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1rpx solid #ddd;
+  overflow: hidden;
+  box-shadow: 1px 2px 6px #dfdfdf;
+}
+
+.act-item image {
+  width: 100%;
+}
+
+.act-name ,
+.act-desc {
+  padding: 0 12px;
+}
+
+.act-name {
+  margin-top: 6px;
+}
+
+.act-desc {
+  margin-bottom: 12px;
+  color: #999;
+  font-size: .8em;
+}

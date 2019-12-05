@@ -1,0 +1,25 @@
+<view>
+  <view class='filter-bar'>
+    <view data-filtername='all' class="{{currentFilter=='all'?'active':''}}" bindtap='onTabClick'>全部项目</view>
+    <view data-filtername='round' class="{{currentFilter=='round'?'active':''}}" bindtap='onTabClick'>轮次
+      <expand-icon active="{{filterSelected.round?true:false}}" expanded="{{expanded&&currentFilter==='round'?true:false}}" />
+    </view>
+    <view data-filtername='currency' class="{{currentFilter=='currency'?'active':''}}" bindtap='onTabClick'>币种
+      <expand-icon active="{{filterSelected.currency?true:false}}" expanded="{{expanded&&currentFilter==='currency'?true:false}}" />
+    </view>
+    <view data-filtername='category' class="{{currentFilter=='category'?'active':''}}" bindtap='onTabClick'>行业
+      <expand-icon active="{{filterSelected.industry?true:false}}" expanded="{{expanded&&currentFilter==='category'?true:false}}" />
+    </view>
+  </view>
+  <view class='filter-slider' style='left: {{offsetLeft}}px;'></view>
+  <view class='filter-panels-overlay' style="max-height: {{expanded ? '200px' : '0'}};">
+    <view class='filter-panels' style="transform: translateX({{panelLeftOffset}})">
+      <view class='filter-panel' wx:for="{{panels}}" wx:for-item="panel">
+        <view class="filter-option {{item.selected?'active':''}}" wx:for="{{filters[panel]}}" wx:key="key" data-panel="{{panel}}" data-option="{{item.key}}" bindtap='tapOption'>
+          {{item.name}}
+        </view>
+      </view>
+    </view>
+  </view>
+  {{selectedOptions.join(',')}}
+</view>

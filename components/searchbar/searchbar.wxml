@@ -1,0 +1,5 @@
+ <view class='searchbar-container'>
+    <view class='searchicon'></view>
+    <input value="{{value}}" placeholder='请搜索您感兴趣的项目名称' bindinput='input' bindconfirm='search' confirm-type='search'/>
+    <view wx:if="{{!!value}}" class='removeicon' bindtap='clear'></view>
+  </view>

@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class='act-items'> 
+  <view class='act-item' bindtap='bindMainBtnTap' data-actid="4">
+    <image mode='widthFix' src="https://matrixpartner-1251445337.cos.ap-beijing.myqcloud.com/act_cover4.jpeg"></image>
+    <view class='act-name'>成长期专场</view>
+    <view class='act-desc'>2018年8月29日</view>
+  </view>
+  <!-- <button bindtap='bindMainBtnTap' data-actid="103">早期专场报名</button> -->
+  <view class='act-item' bindtap='bindMainBtnTap' data-actid="3">
+    <image mode='widthFix' src="https://matrixpartner-1251445337.cos.ap-beijing.myqcloud.com/act_cover3.jpeg"></image>
+    <view class='act-name'>早期专场</view>
+    <view class='act-desc'>2018年8月22日</view>
+  </view>
+  <view class="act-item" bindtap='bindMainBtnTap' data-actid="1">
+    <image mode='widthFix' src="https://matrixpartner-1251445337.cos.ap-beijing.myqcloud.com/act_cover2.jpeg"></image>
+    <view class='act-name'>消费教育专场</view>
+    <view class='act-desc'>2018年5月9日</view>
+  </view>
+  <view class="act-item" bindtap='bindMainBtnTap' data-actid="2">
+    <image mode='widthFix' src="https://matrixpartner-1251445337.cos.ap-beijing.myqcloud.com/act_cover1.jpeg"></image>
+    <view class='act-name'>企业服务专场</view>
+    <view class='act-desc'>2018年4月11日</view>
+  </view>
+</view>

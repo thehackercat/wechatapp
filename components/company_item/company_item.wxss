@@ -1,0 +1,94 @@
+@import "../../pages/common";
+@import "./company_logo";
+
+/* company items  */
+.company-wrp {
+  padding: 20px 0 10px;
+}
+
+.company-item {
+  display: flex;
+  padding: 0;
+  margin-bottom: 20px;
+  padding-right: 54px; /* 给.user-btn留出空间 */
+}
+
+.company-item::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.company-brief {
+  line-height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.company-tag {
+  display: inline-block;
+  margin-right: 5rpx;
+  font-size: 0.6em;
+  background: #eee;
+  border-radius: 3rpx;
+  padding: 3rpx 15rpx;
+  line-height: initial;
+}
+
+.company-desc {
+  overflow: hidden;
+  box-sizing: border-box;
+  /* transition: all 300ms ease-in-out; */
+  text-align: justify;
+  padding: 0 20px;
+}
+
+.company-desc.show {
+  max-height: 500px;
+}
+
+.company-desc.hidden {
+  max-height: 0;
+}
+
+/**
+ * 每个item的操作区域
+ */
+
+ .user-btn {
+    position: absolute;
+    padding-right: 20px;
+    right: 0;
+    height: 40px;
+    margin-top: 10px;
+  }
+  
+  .user-btn::after {
+    content: "";
+    background-image: url(http://puui.qpic.cn/tv/0/23195138/0);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 16px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    transition: 300ms ease-in-out all;
+  }
+  
+  .user-btn.to-hide::after {
+    transform: rotate(180deg)
+  }
+  
+  .user-btn button {
+    color: transparent;
+    padding: 0px 5px;
+    font-size: 0.6em;
+    box-shadow: 0 1px 2px -3px rgba(0, 0, 0, 0.16);
+    box-sizing: border-box;
+    height: 20px;
+    width: 32px;
+  }

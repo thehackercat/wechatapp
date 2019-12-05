@@ -1,0 +1,19 @@
+<view class='company-wrp'>
+  <view class='company-item {{chosen ? "chosen" : ""}}'>
+    <view class='company-logo-view' data-id="{{id}}" bindtap='companyChosen'>
+      <image class='company-logo' src="{{logo}}" mode="aspectFit" binderror='imgError'></image>
+    </view>
+    <view class="company-brief" data-id="{{id}}" bindtap='companyChosen'>
+      {{name}}
+      <view class="company-tag" wx:if="{{progress}}">{{progress}}</view>
+      <view class="company-tag" wx:if="{{currency}}">{{currency}}</view>
+      <view class="company-tag" wx:if="{{category}}">{{category}}</view>
+    </view>
+    <view class='user-btn {{showDesc ? "to-hide" : "to-show"}}' bindtap='companyShowDesc'>
+      <button>{{showDesc ? "收起" : "展开"}}</button>
+    </view>
+  </view>
+  <view class="company-desc {{showDesc? 'show' : 'hidden'}}">
+    {{desc || '暂无介绍'}}
+  </view>
+</view>

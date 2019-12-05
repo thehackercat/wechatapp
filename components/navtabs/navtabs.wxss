@@ -1,0 +1,92 @@
+@import "./logo.wxss";
+
+.logo {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 20px;
+    border-left: transparent 20px solid;
+    border-right: transparent 20px solid;
+    box-sizing: border-box;
+}
+
+.circle-logo {
+    transition: .3s ease-in-out;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -1px;
+    flex-basis: 1;
+}
+
+.circle-logo.show {
+    width: 45px;
+    height: 45px;
+}
+
+.circle-logo.hide {
+    width: 0;
+    height: 0;
+}
+
+/* Tabs */
+.tabs {
+    flex-wrap: wrap;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    background: #fff;
+    z-index: 999;
+    margin-bottom: 20px;
+    top: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.tabs .tab {
+    flex: 1;
+    text-align: center;
+    color: #6B686A;
+    transition: color .1s ease-in-out;
+    flex-basis: 3;
+    line-height: 45px;
+}
+
+.tabs .tab.active {
+    color: black;
+}
+
+.tabs .active-line {
+    width: 10%;
+    height: 3px;
+    background: #85c1cc;
+    border-radius: 1px;
+    position: absolute;
+    top: 45px;
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 1px 3px #85c1cc;
+} 
+
+/* defaultly */
+.tabs .circle-logo.hide+.tab.active+.tab+.active-line {
+    left: 20%;
+    /** 25 - 10/2 */
+    margin-left: 10px;
+}
+
+.tabs .circle-logo.hide+.tab+.tab.active+.active-line {
+    left: 70%;
+    margin-left: -10px;
+}
+
+.tabs .circle-logo.show+.tab.active+.tab+.active-line {
+    left: 20%;
+    margin-left: 44px;
+}
+
+.tabs .circle-logo.show+.tab+.tab.active+.active-line {
+    left: 70%;
+    margin-left: 1px;
+}

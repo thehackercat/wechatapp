@@ -1,0 +1,54 @@
+/* https://cssicon.space/#/icon/search */
+
+.removeicon, .searchicon {
+  color: #808083;
+}
+
+.searchicon {
+  position: absolute;
+  top: 4px;
+  left: 7px;
+  margin-top: 2px;
+  margin-left: 3px;
+  width: 12px;
+  height: 12px;
+  border: solid 1px currentColor;
+  border-radius: 100%;
+  transform: rotate(-45deg) scale(.8);
+}
+
+.searchicon:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 5px;
+  height: 6px;
+  width: 1px;
+  background-color: currentColor;
+}
+
+.removeicon {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  margin-left: 3px;
+  margin-top: 10px;
+  width: 12px;
+  height: 12px;
+}
+.removeicon:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+  transform: rotate(45deg);
+}
+.removeicon:after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: currentColor;
+  transform: rotate(-45deg);
+}

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "expand-icon": "../expand_icon/expand_icon"
+  }
+}

@@ -1,0 +1,33 @@
+@import '../../pages/common';
+@import './icons';
+
+.bottom-tab {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  z-index: 999;
+  border-top: 1rpx solid #ddd;
+  background: #fff;
+}
+
+.bottom-tab .tab {
+  flex: 1;
+  text-align: center;
+  height: 40px;
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center 15px;
+  font-size: .8em;
+  padding-top: 50px;
+  color: #ddd;
+}
+
+.bottom-tab navigator.tab:focus {
+  background: transparent;
+}
+
+.bottom-tab .tab.active {
+  color: #85c1cc;
+}

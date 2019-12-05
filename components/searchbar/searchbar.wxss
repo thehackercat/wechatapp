@@ -1,0 +1,17 @@
+@import "../../pages/common";
+@import "./icons";
+
+.searchbar-container {
+  background: #F5F5F7;
+  border-radius: 1em;
+  margin: 0 10px;
+  position: relative;
+}
+
+.searchbar-container input {
+  margin: 0 20px;
+  padding: 0 10px;
+  font-size: .8em;
+  line-height: 30px;
+  height: 30px;
+}

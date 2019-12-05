@@ -1,0 +1,77 @@
+@import "/pages/common";
+
+.filter-bar, .filter-panels-overlay {
+  background: #fff;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0 5px;
+  border-bottom: 1rpx solid #ddd;
+  color: #555;
+  font-size: .8;
+}
+
+.filter-bar > view {
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  transition: .2s ease-in-out color;
+}
+
+.filter-bar > .active {
+  color: #85c1cc;
+}
+
+.filter-slider {
+  height: 3px;
+  width: 25%;
+  background: #85c1cc;
+  transition: .2s ease-in-out all;
+  position: relative;
+}
+
+.filter-panels-overlay {
+  overflow: hidden;
+  transition: .3s ease-in-out all;
+}
+
+.filter-panels-overlay .filter-panels {
+  border-bottom: 1rpx solid #ddd;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 300%;
+  transition: transform .3s ease-in-out;
+}
+
+.filter-panels-overlay .filter-panels .filter-panel {
+  padding: 6px 6px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 33%;
+}
+
+.filter-panels-overlay .filter-panels .filter-panel .filter-option {
+  width: 25%;
+  flex-basis: 1;
+  flex-grow: 1;
+  text-align: center;
+  border: 1rpx solid #ddd;
+  border-radius: 14px;
+  line-height: 28px;
+  height: 28px;
+  box-sizing: border-box;
+  margin: 6px;
+  color: #666;
+  font-size: .8em;
+  transition: .1s ease-in-out;
+}
+
+.filter-panels-overlay .filter-panels .filter-panel .filter-option.active {
+  background-color: #85c1cc;
+  color: #fff;
+  border-color: #fff;
+}
